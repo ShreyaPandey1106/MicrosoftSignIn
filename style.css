@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    background: #EFEFBB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero div{
+    font-family: 'Catamaran', sans-serif;
+    font-size: smaller;
+    background-color: white;
+    width: 30%;
+}
+.main{
+    height: 55%;
+    padding: 3%;
+    margin-bottom: 3%;
+    position: relative;
+}
+.main img{
+    height: 50px;
+    margin-bottom: 5%;
+}
+.main input{
+    padding-bottom: 2%;
+    font-size: medium;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black ;
+    margin-bottom: 5%;
+}
+.main h1,p{
+    margin-bottom: 5%;
+}
+.main a{
+    color: #005da6;
+}
+.main button{
+    background-color: #005da6;
+    color: white;
+    border: none;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    bottom: 35px;
+    right: 40px;
+}
+.bi{
+    font-size: xx-large;
+    text-align: center;
+    margin-right: 5%;
+}
+.options button{
+    height: 100%;
+    width: 100%;
+    color: rgb(68, 67, 67);
+    border: none;
+    background-color: white;
+    font-size: larger;
+    text-align: left;
+    padding: 2% 5% 2% 5%;
+}
+
+
+/* Media Querry */
+@media (max-width:768px) {
+    .hero{
+        display: block;
+        background: none;
+    }
+    .hero div{
+        width: 100%;
+    }
+}
